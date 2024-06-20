@@ -44,8 +44,8 @@ This repository is not the main repository used at the time of model fine-tuning
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/your-repo/socialsense.git
-    cd socialsense
+    git clone https://github.com/IbraheemOmer/SocialSense-FYP.git
+    cd SocialSense-FYP
     ```
 
 2. **Run Jupyter Notebooks:**
