@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "SocialSense for Instagram",
+  "version": "1.0",
+  "description": "An extension to classify Instagram comments using SocialSense.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/instagram.png",
+      "48": "icons/instagram.png",
+      "128": "icons/instagram.png"
+    }
+  },
+
+  "icons": {
+    "16": "icons/instagram.png",
+    "48": "icons/instagram.png",
+    "128": "icons/instagram.png"
+  },
+  
+  "host_permissions": ["https://www.instagram.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

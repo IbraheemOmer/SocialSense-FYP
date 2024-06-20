@@ -1,0 +1,14 @@
+.logo {
+  width: 328px;
+  height: 230px;
+  aspect-ratio: 1;
+  align-self: start;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 164px;
+    height: 115px;
+    flex-shrink: 0;
+  }
+}

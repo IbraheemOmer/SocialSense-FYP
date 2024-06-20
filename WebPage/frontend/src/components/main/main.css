@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Display children in a column */
+  font-family: Inter;
+}
+
+.logo {
+  width: 328px;
+  height: 230px;
+  aspect-ratio: 1;
+  align-self: start;
+}
+
+.small-logo {
+  width: 67px;
+  height: 47px;
+  flex-shrink: 0;
+}
+
+.input-box {
+  width: 700px;
+  height: 60px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 30px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  margin-right: 55px;
+}
+
+.input-box input {
+  margin-left: 20px;
+  padding: 10px 20px 10px 30px;
+  width: 400px;
+  border: none;
+  outline: none;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.3px;
+  color: black;
+}
+
+/* .hero {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid black;
+}
+
+.content {
+  width: 500px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.3px;
+  color: black;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}

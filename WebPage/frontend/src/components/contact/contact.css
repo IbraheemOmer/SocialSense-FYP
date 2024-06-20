@@ -1,0 +1,60 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-style: none none outset none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.3px;
+  color: black;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  height: 88vh;
+}
+
+.contact-form .button {
+  align-self: flex-end; /* Align the button to the right */
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: black; /* Set the background color */
+  color: white; /* Set the text color */
+  border: none; /* Remove the button border */
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.3px;
+  margin-top: 15px;
+  width: 20%;
+}
+
+/* Add hover effect to the button */
+.contact-form .button:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+.heading-contact {
+  text-align: center;
+  margin-top: 30px;
+}

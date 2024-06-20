@@ -1,0 +1,18 @@
+.hero {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1450px) {
+  .hero {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-top: 150px;
+  }
+}

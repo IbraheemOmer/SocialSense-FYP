@@ -1,0 +1,117 @@
+/* product.css */
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-product {
+  max-width: 90%; /* Adjust the max-width to fit smaller screens */
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 20px auto;
+  transition: 0.5s;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column; /* Change flex-direction to column for smaller devices */
+  align-items: center; /* Center items horizontally */
+}
+
+.content-product:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.content-product img {
+  width: 100%; /* Make the image responsive */
+  max-width: 300px; /* Limit image width for smaller screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.description {
+  padding: 10px;
+  text-align: center; /* Center text */
+}
+
+.description h1 {
+  margin-bottom: 10px; /* Add some space below heading */
+}
+
+.products-heading {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.arrow {
+  text-align: right;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.922); /* Change color to your preference */
+  cursor: pointer;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 0px;
+  color: white;
+}
+
+select {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+option {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+pre {
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-top: 1px solid hsl(0, 0%, 100%);
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.code-content {
+  background-color: hsl(0, 0%, 0%);
+  border: 1px solid hsl(0, 0%, 0%);
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+}
+.code-snippet-container {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .content-product {
+    flex-direction: row; /* Revert to row layout for larger screens */
+    align-items: stretch; /* Align items to the stretch to fill container */
+  }
+
+  .content-product img {
+    width: 200px; /* Adjust image width for larger screens */
+  }
+
+  .description {
+    padding: 10px;
+    text-align: justify; /* Justify paragraph text */
+  }
+}

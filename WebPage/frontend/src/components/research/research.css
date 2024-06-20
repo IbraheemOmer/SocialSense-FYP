@@ -1,0 +1,140 @@
+.grid {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Create three columns with equal width */
+  gap: 30px; /* Add a gap between the columns */
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.model {
+  width: 97%;
+  height: 100%;
+  margin: 20px auto;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+.model p {
+  text-align: justify;
+}
+
+.model h1 {
+  text-align: center;
+}
+
+.categories-content-1,
+.categories-content-2,
+.categories-content-3,
+.categories-content-4,
+.categories-content-5,
+.categories-content-6 {
+  width: 100%; /* Set the width to 100% to take up the entire column */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 2px solid black;
+  padding: 0 20px;
+  border-radius: 25px;
+  text-align: justify;
+}
+
+.categories-content p {
+  text-align: justify;
+}
+
+.categories-content-1 h1::before {
+  content: "●";
+  margin-right: 0.2em;
+  color: #bdf589; /* Adjust the spacing between the bullet point and text as needed */
+  font-size: 1em;
+}
+
+.categories-content-2 h1::before {
+  content: "●";
+  margin-right: 0.2em;
+  color: #81baf7; /* Adjust the spacing between the bullet point and text as needed */
+  font-size: 1em;
+}
+
+.categories-content-3 h1::before {
+  content: "●";
+  margin-right: 0.2em;
+  color: #fa9696; /* Adjust the spacing between the bullet point and text as needed */
+  font-size: 1em;
+}
+
+.categories-content-4 h1::before {
+  content: "●";
+  margin-right: 0.2em;
+  color: #fcb679; /* Adjust the spacing between the bullet point and text as needed */
+  font-size: 1em;
+}
+
+.categories-content-5 h1::before {
+  content: "●";
+  margin-right: 0.2em;
+  color: #fcd66d; /* Adjust the spacing between the bullet point and text as needed */
+  font-size: 1em;
+}
+
+.categories-content-6 h1::before {
+  content: "●";
+  margin-right: 0.2em;
+  color: #d1d1d1; /* Adjust the spacing between the bullet point and text as needed */
+  font-size: 1em;
+}
+
+.project-details {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: justify;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.project-details h1 {
+  text-align: center;
+}
+
+.categories-content-1 h4,
+.categories-content-2 h4,
+.categories-content-3 h4,
+.categories-content-4 h4,
+.categories-content-5 h4,
+.categories-content-6 h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Display a single column on smaller screens */
+  }
+
+  .model {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .categories-content-1,
+  .categories-content-2,
+  .categories-content-3,
+  .categories-content-4,
+  .categories-content-5,
+  .categories-content-6 {
+    width: 100%; /* Set the width to 100% to take up the entire column */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 2px solid black;
+    padding: 0 20px;
+    border-radius: 25px;
+    text-align: justify;
+  }
+}
