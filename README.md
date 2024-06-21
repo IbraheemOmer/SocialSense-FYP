@@ -1,6 +1,8 @@
 # SocialSense: LLM Based Social Media Comments Classification
 
-SocialSense is a project aimed at classifying social media comments using fine-tuned large language models (LLMs). This project includes several components such as Chrome extensions for different social media platforms, a web-based interface, and comprehensive documentation and analysis tools.
+This project embarked on developing an AI-powered solution for classifying social media comments, aiming to enhance user experience and foster positive online interactions. After evaluating various Language Model (LLM) options, we fine-tuned the GPT-3.5-Turbo LLM with nearly half a million tokens, achieving a model capable of classifying comments into six categories: Positive, Neutral, Crisis, Negative - Ignore, Negative - Respond, and Negative - Remove. The comments were multilingual, encompassing English, Urdu (Roman & Arabic Script). The model achieved an overall accuracy rate of 84%, demonstrating its effectiveness in handling diverse and complex comment data.
+
+To facilitate seamless integration, we developed an API with extensive documentation and support, and a user-friendly Chrome webpage for users to interact with the model and explore project details. Additionally, we created three Chrome extensions – SocialSense for Facebook, Instagram, and TikTok – to classify comments in real-time and enhance social media experiences. These extensions were successfully deployed on the Chrome Web Store, making our solution accessible to a wider audience.
 
 ## Project Structure
 
